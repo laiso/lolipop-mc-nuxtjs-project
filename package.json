@@ -1,17 +1,23 @@
 {
-  "name": "express-sample",
-  "version": "0.0.0",
+  "name": "nuxt01",
+  "version": "1.0.0",
+  "description": "My gnarly Nuxt.js project",
+  "author": "laiso",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "NODE_ENV=production ./bin/www",
+    "generate": "nuxt generate"
   },
   "dependencies": {
-    "body-parser": "~1.17.1",
-    "cookie-parser": "~1.4.3",
-    "debug": "~2.6.3",
-    "express": "~4.15.2",
-    "jade": "~1.11.0",
-    "morgan": "~1.8.1",
-    "serve-favicon": "~2.4.2"
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "morgan": "^1.9.0",
+    "nuxt": "^1.0.0",
+    "nuxt-start": "^1.0.0-rc11"
+  },
+  "devDependencies": {
+    "cross-env": "^5.0.1"
   }
 }
