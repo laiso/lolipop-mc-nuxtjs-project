@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  ul
+    li Node.js version:&nbsp;
+      code #{nodeVersion}
+    li Express.js version:&nbsp;
+      code #{expressVersion}
+    li Hostname:&nbsp;
+      code #{hostname}
