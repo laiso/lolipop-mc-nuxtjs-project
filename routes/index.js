@@ -6,7 +6,7 @@ router.get('/', function(req, res, next) {
     var ev = req.app.get('express-version');
 
     res.render('index', {
-        title: 'Express',
+        title: 'My Home Page!!!111',
         nodeVersion: process.version,
         expressVersion: ev,
         hostname: require('os').hostname()
