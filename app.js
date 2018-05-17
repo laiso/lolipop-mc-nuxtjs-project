@@ -1,8 +1,8 @@
-var express = require('express');
-var path = require('path');
-var logger = require('morgan');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
+const express = require('express');
+const path = require('path');
+const logger = require('morgan');
+const cookieParser = require('cookie-parser');
+const bodyParser = require('body-parser');
 
 const { Nuxt } = require('nuxt-start')
 
@@ -12,7 +12,7 @@ const nuxt = new Nuxt(config)
 
 const app = express()
 
-var expressVersion = require('./node_modules/express/package.json').version;
+const expressVersion = require('./node_modules/express/package.json').version;
 app.set('express-version', expressVersion);
 
 app.use(logger('dev'));
@@ -25,7 +25,7 @@ app.use(nuxt.render)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
-  var err = new Error('Not Found');
+  const err = new Error('Not Found');
   err.status = 404;
   next(err);
 });
